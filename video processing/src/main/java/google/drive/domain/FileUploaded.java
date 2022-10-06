@@ -12,6 +12,7 @@ public class FileUploaded extends AbstractEvent {
     private String name;
     private String type;
     private Long size;
+    private String status;
 }
 
 

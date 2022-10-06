@@ -2,23 +2,17 @@ package google.drive.domain;
 
 import google.drive.domain.*;
 import google.drive.infra.AbstractEvent;
-import java.util.*;
 import lombok.*;
-
+import java.util.*;
 @Data
 @ToString
-public class FileUploaded extends AbstractEvent {
+public class FileDeleted extends AbstractEvent {
 
     private Long id;
     private String name;
     private String type;
     private Long size;
     private String status;
-
-    public FileUploaded(File aggregate){
-        super(aggregate);
-    }
-    public FileUploaded(){
-        super();
-    }
 }
+
+

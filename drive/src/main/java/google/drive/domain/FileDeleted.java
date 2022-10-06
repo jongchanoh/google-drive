@@ -7,7 +7,7 @@ import lombok.*;
 
 @Data
 @ToString
-public class FileUploaded extends AbstractEvent {
+public class FileDeleted extends AbstractEvent {
 
     private Long id;
     private String name;
@@ -15,10 +15,10 @@ public class FileUploaded extends AbstractEvent {
     private Long size;
     private String status;
 
-    public FileUploaded(File aggregate){
+    public FileDeleted(File aggregate){
         super(aggregate);
     }
-    public FileUploaded(){
+    public FileDeleted(){
         super();
     }
 }
